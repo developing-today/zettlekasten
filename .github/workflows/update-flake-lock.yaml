@@ -1,11 +1,11 @@
-name: update-flake-lock
+name: Update Flake Lock
 on:
   push:
   workflow_dispatch:
   schedule:
     - cron: '0 0 * * 0' # runs weekly on Sunday at 00:00 UTC
 jobs:
-  lockfile:
+  update-flake-lock:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@main
