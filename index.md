@@ -1,4 +1,4 @@
-# [developing.today](https://developing.today)
+# developing.today
 
 Welcome. Feel free to edit and explore.
 
