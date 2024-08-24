@@ -9,7 +9,7 @@
 
 - [x] A task that was done
 - [ ] A task that is to be done.
-- [ ] Task with *Markdown* and links (eg: [[hi there]])
+- [ ] Task with *Markdown* and links (eg: [[note]])
 - A list item with no task marker
 
 Tasks can also be written outside of list context, such as paragraphs:
