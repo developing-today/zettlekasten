@@ -10,15 +10,23 @@ permissions:
   pages: write
   id-token: write
 jobs:
-  ci-cd:
+  ci:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@main
       - uses: DeterminateSystems/nix-installer-action@main
       - uses: DeterminateSystems/magic-nix-cache-action@main
-      - run: nix build -o ./result
-      - uses: peaceiris/actions-gh-pages@main
-        if: github.ref == 'refs/heads/main' && github.event_name == 'push'
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: result
+      - run: nix build -o ./_site
+      - uses: actions/upload-pages-artifact@main
+  cd:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    concurrency:
+      group: "pages"
+      cancel-in-progress: false
+    if: github.ref == 'refs/heads/main' && github.event_name == 'push'
+    runs-on: ubuntu-latest
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@main
