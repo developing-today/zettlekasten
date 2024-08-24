@@ -1,3 +1,3 @@
-# [developing.today](developing.today)
+# [developing.today](https://developing.today)
 
 Welcome.
