@@ -6,6 +6,8 @@ page:
     <snippet var="js.highlightjs" />
 template:
   editBaseUrl: https://github.com/developing-today/zettle/edit/main
+  newBaseUrl: https://github.com/developing-today/zettle/new/main
+  deleteBaseUrl: https://github.com/developing-today/zettle/delete/main
   theme: red
   iconUrl: static/favicon.ico
   urlStrategy: pretty
