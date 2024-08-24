@@ -1,3 +1,3 @@
 # [developing.today](https://developing.today)
 
-Welcome.
+Welcome. Feel free to edit and explore.
