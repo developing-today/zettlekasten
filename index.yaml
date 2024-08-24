@@ -5,21 +5,20 @@ page:
   headHtml: |
     <snippet var="js.highlightjs" />
 template:
+  editBaseUrl: https://github.com/developing-today/zettle/edit/main
   theme: black
   iconUrl: static/favicon.jpeg
   urlStrategy: pretty
   uptree: 
     enable: true
-  editBaseUrl: https://github.com/developing-today/zettle/edit/main
-  name: /templates/layouts/note
-  layout:
-    note:
-      containerClass: container mx-auto max-w-screen-lg
   sidebar:
     collapsed: false
+  # name: /templates/layouts/note
+  # layout:
+  #   note:
+  #     containerClass: container mx-auto max-w-screen-lg
   base:
     bodyClass: overflow-y-scroll bg-gray-400
-
 
 pandoc:
   rewriteClass:
