@@ -17,9 +17,13 @@ template:
   # layout:
   #   note:
   #     containerClass: container mx-auto max-w-screen-lg
+  # template.sidebar.folders-first
+  # order
+  #   folder-folgezettel: true
+  #   page.image:
+  #   page.siteUrl
   base:
     bodyClass: overflow-y-scroll bg-gray-400
-
 pandoc:
   rewriteClass:
     prose: max-w-prose mx-auto
