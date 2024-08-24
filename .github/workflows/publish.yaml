@@ -17,7 +17,7 @@ jobs:
       - uses: DeterminateSystems/nix-installer-action@main
       - uses: DeterminateSystems/magic-nix-cache-action@main
       - run: |
-          nix build .#site-github -j 4
+          nix build .#emanote
       - uses: peaceiris/actions-gh-pages@main
         if: github.ref == 'refs/heads/main' && github.event_name == 'push'
         with:
