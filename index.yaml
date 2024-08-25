@@ -14,7 +14,7 @@ template:
   uptree: 
     enable: true
   sidebar:
-    collapsed: false
+    collapsed: true
   # name: /templates/layouts/note
   # layout:
   #   note:
