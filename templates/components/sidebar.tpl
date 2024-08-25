@@ -2,11 +2,12 @@
   class="flex-shrink hidden leading-relaxed md:block md:sticky md:top-0 md:max-h-screen md:overflow-y-auto md:w-48 xl:w-64">
   <div class="px-2 py-2 text-gray-800">
     <div id="indexing-links" class="flex flex-row float-right p-2 space-x-2 text-gray-500">
-      <a class="text-gray-300 hover:text-${theme}-600 text-sm" title="New page somewhere on GitHub"
-        href="${value:newBaseUrl}/${ema:note:source-path}">
-        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <a href="${value:newBaseUrl}/${ema:note:source-path}" title="New page somewhere on GitHub">
+        <svg style="width: 1rem;" class="hover:text-${theme}-700" fill="none" stroke="currentColor"
+          viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-            d="M12 9v6m3-3H9m12 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+            d="M12 9v6m3-3H9m12 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z">
+          </path>
         </svg>
       </a>
       <a href="${ema:tagIndexUrl}" title="View tags">
