@@ -60,14 +60,6 @@
           <a href="${node:url}" title="View folgezettel children">
             <icon />
           </a>
-          <a href="${value:newBaseUrl}/${note:url}" title="New page somewhere on GitHub">
-            <svg style="width: 1rem;" class="hover:text-${theme}-700" fill="none" stroke="currentColor"
-              viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                d="M12 9v6m3-3H9m12 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z">
-              </path>
-            </svg>
-          </a>
           <else />
           <icon />
         </has-children>
@@ -75,6 +67,14 @@
     </span>
     <a class="${link-class} rounded px-1.5 truncate" title="${node:text}" href="${node:url}"> 
       <node:text />
+    </a>
+    <a href="${value:newBaseUrl}/${note:url}" title="New page somewhere on GitHub">
+      <svg style="width: 1rem;" class="hover:text-${theme}-700" fill="none" stroke="currentColor"
+        viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+          d="M12 9v6m3-3H9m12 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z">
+        </path>
+      </svg>
     </a>
     <tree:open>
       <else />
