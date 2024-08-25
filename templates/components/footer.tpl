@@ -1,7 +1,7 @@
 <footer class="flex items-center justify-center mt-2 mb-8 space-x-4 text-center text-gray-800">
   <bind tag="iconClass">w-6 h-6 hover:text-${theme}-700</bind>
   <div>
-    <a href="${value:newBaseUrl}/${ema:note:source-path}" title="New page somewhere on GitHub">
+    <a href="${value:newBaseUrl}/${ema:note:source-path}" title="New page somewhere on GitHub" to do="TODO: use call anywhere everywhere and default name to current dir">
       <svg xmlns="http://www.w3.org/2000/svg" class="${iconClass}" fill="none" viewBox="0 0 24 24"
         stroke="currentColor">
         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -51,5 +51,7 @@
           d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
       </svg>
     </a>
+  </div>
+  <div todo="TODO: put task add here like anywhere add">
   </div>
 </footer>
