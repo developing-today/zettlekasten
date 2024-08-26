@@ -23,7 +23,7 @@
             layers = [{ path = ./.; pathString = "."; }];
             # port = 8080;
             # baseUrl = "/zettle/"; # Change to "/" (or remove it entirely) if using CNAME
-            # prettyUrls = true;
+            prettyUrls = true;
           };
         };
         devShells.default = pkgs.mkShell {
