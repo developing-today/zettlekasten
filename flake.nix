@@ -5,7 +5,7 @@
   };
 
   inputs = {
-    emanote.url = "github:srid/emanote";
+    emanote.url = "github:developing-today-forks/emanote";
     emanote.inputs.emanote-template.follows = "";
     nixpkgs.follows = "emanote/nixpkgs";
     flake-parts.follows = "emanote/flake-parts";

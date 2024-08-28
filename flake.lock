@@ -166,15 +166,15 @@
         "unionmount": "unionmount_2"
       },
       "locked": {
-        "lastModified": 1724442379,
-        "narHash": "sha256-Sl8nsStR3OgoYh4Dk3dMogu9nA72PpICTZpTz54KcOg=",
-        "owner": "srid",
+        "lastModified": 1724825751,
+        "narHash": "sha256-FUqkqOXjcC3z2rAU/ekbyQ45ztTe1YxwoTv5hcdVXVI=",
+        "owner": "developing-today-forks",
         "repo": "emanote",
-        "rev": "45eacc8a5d21213fa4e2feafa0b1df23fcb38876",
+        "rev": "69f7f3df33e006ef2199a743b8b3066179138f4a",
         "type": "github"
       },
       "original": {
-        "owner": "srid",
+        "owner": "developing-today-forks",
         "repo": "emanote",
         "type": "github"
       }
