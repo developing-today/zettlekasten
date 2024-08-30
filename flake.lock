@@ -166,11 +166,11 @@
         "unionmount": "unionmount_2"
       },
       "locked": {
-        "lastModified": 1725002634,
-        "narHash": "sha256-yduEql+xbYfGmOLgVv35EY9D1Y9A87DwK9YQowqOsnY=",
+        "lastModified": 1725003485,
+        "narHash": "sha256-jMamXqtaLAnkTbWN0vU54cj3sycH5MM+p3O54zgHNDk=",
         "owner": "developing-today-forks",
         "repo": "emanote",
-        "rev": "b454e229f5cfc6adb64380110a8263da1347aca3",
+        "rev": "b49e43eb979d1eb2602f6fa72795e4f30227ef43",
         "type": "github"
       },
       "original": {
