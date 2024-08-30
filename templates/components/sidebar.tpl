@@ -2,7 +2,7 @@
   class="flex-shrink hidden leading-relaxed md:block md:sticky md:top-0 md:max-h-screen md:overflow-y-auto md:w-48 xl:w-64">
   <div class="px-2 py-2 text-gray-800">
     <div id="indexing-links" class="flex flex-row float-right p-2 space-x-2 text-gray-500">
-      <a href="${value:newBaseUrl}/${ema:note:source-path}" title="New page somewhere on GitHub">
+      <a href="https://github.com/developing-today/zettel/new/main/${ema:note:source-path}" title="New page somewhere on GitHub">
         <svg style="width: 1rem;" class="hover:text-${theme}-700" fill="none" stroke="currentColor"
           viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -31,7 +31,7 @@
             <with var="template">
               <!-- The style width attribute here is to prevent huge
                       icon from displaying at those rare occasions when Tailwind
-                      hasn't kicked in immediately on page load 
+                      hasn't kicked in immediately on page load
                       -->
               <img style="width: 1rem;"
                 class="transition transform hover:scale-110 hover:opacity-80"

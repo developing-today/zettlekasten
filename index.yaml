@@ -5,13 +5,13 @@ page:
   # headHtml: |
   #   <snippet var="js.highlightjs" />
 template:
-  editBaseUrl: https://github.com/developing-today/zettle/edit/main
-  newBaseUrl: https://github.com/developing-today/zettle/new/main
-  deleteBaseUrl: https://github.com/developing-today/zettle/delete/main
+  editBaseUrl: https://github.com/developing-today/zettel/edit/main
+  newBaseUrl: https://github.com/developing-today/zettel/new/main
+  deleteBaseUrl: https://github.com/developing-today/zettel/delete/main
   theme: red
   iconUrl: static/favicon.ico
   urlStrategy: pretty
-  uptree: 
+  uptree:
     enable: true
   # sidebar:
   #   collapsed: true

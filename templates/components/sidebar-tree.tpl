@@ -68,8 +68,8 @@
     <a class="${link-class} rounded px-1.5 truncate" title="${node:text}" href="${node:url}">
       <node:text />
     </a>
-    <!-- <a href="${value:newBaseUrl}/${note:url}" title="New page somewhere on GitHub"> -->
-    <a href="${value:newBaseUrl}/${node:text}" title="New page in this directory">
+    <!-- <a href="https://github.com/developing-today/zettel/new/main/${note:url}" title="New page somewhere on GitHub"> -->
+    <a href="https://github.com/developing-today/zettel/new/main/${node:text}" title="New page in this directory">
       <svg style="width: 1rem;" class="hover :text-${theme}-700" fill="none" stroke="currentColor"
         viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
