@@ -1,16 +1,6 @@
 <footer class="flex items-center justify-center mt-2 mb-8 space-x-4 text-center text-gray-800">
   <bind tag="iconClass">w-6 h-6 hover:text-${theme}-700</bind>
   <div>
-    <a href="https://github.com/developing-today/zettel/new/main/${ema:note:source-path}" title="New page somewhere on GitHub" to do="TODO: use call anywhere everywhere and default name to current dir">
-      <svg xmlns="http://www.w3.org/2000/svg" class="${iconClass}" fill="none" viewBox="0 0 24 24"
-        stroke="currentColor">
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-          d="M12 9v6m3-3H9m12 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z">
-        </path>
-      </svg>
-    </a>
-  </div>
-  <div>
     <a href="${ema:homeUrl}" title="Go to Home page">
       <svg xmlns="http://www.w3.org/2000/svg" class="${iconClass}" fill="none" viewBox="0 0 24 24"
         stroke="currentColor">
@@ -52,6 +42,14 @@
       </svg>
     </a>
   </div>
-  <div todo="TODO: put task add here like anywhere add">
+  <div>
+    <a href="https://github.com/developing-today/zettel/new/main/${ema:note:source-file-base}" title="New Page in dir: ${ema:note:source-file-base}">
+      <svg xmlns="http://www.w3.org/2000/svg" class="${iconClass}" fill="none" viewBox="0 0 24 24"
+        stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+          d="M12 9v6m3-3H9m12 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z">
+        </path>
+      </svg>
+    </a>
   </div>
 </footer>

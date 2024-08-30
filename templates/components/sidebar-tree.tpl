@@ -68,15 +68,6 @@
     <a class="${link-class} rounded px-1.5 truncate" title="${node:text}" href="${node:url}">
       <node:text />
     </a>
-    <!-- <a href="https://github.com/developing-today/zettel/new/main/${note:url}" title="New page somewhere on GitHub"> -->
-    <a href="https://github.com/developing-today/zettel/new/main/${node:text}" title="New page in this directory">
-      <svg style="width: 1rem;" class="hover :text-${theme}-700" fill="none" stroke="currentColor"
-        viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-          d="M12 4.5v15m7.5-7.5h-15">
-        </path>
-      </svg>
-    </a>
     <tree:open>
       <else />
       <node:terminal>
@@ -86,6 +77,14 @@
         </span>
       </node:terminal>
     </tree:open>
+    <a href="https://github.com/developing-today/zettel/new/main/${node:text}" title="New Page in dir: ${ema:node:text}">
+      <svg style="width: 1rem;" class="hover :text-${theme}-700" fill="none" stroke="currentColor"
+        viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+          d="M12 4.5v15m7.5-7.5h-15">
+        </path>
+      </svg>
+    </a>
   </div>
 
   <!-- Node's children forest, displayed only on active trees
