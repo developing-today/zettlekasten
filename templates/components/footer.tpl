@@ -43,7 +43,7 @@
     </a>
   </div>
   <div>
-    <a href="https://github.com/developing-today/zettel/new/main/${ema:note:source-file-base}" title="New Page New Page @${ema:note:source-file-base}/">
+    <a href="https://github.com/developing-today/zettel/new/main/${ema:note:source-file-base}" title="New@${ema:note:source-file-base}/">
       <svg xmlns="http://www.w3.org/2000/svg" class="${iconClass}" fill="none" viewBox="0 0 24 24"
         stroke="currentColor">
         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
