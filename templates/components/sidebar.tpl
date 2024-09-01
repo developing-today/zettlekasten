@@ -31,7 +31,6 @@
         <apply template="stork/stork-icon" />
       </a>
     </div>
-
     <div id="site-logo" class="pl-2">
       <div class="flex items-center my-2 space-x-2 justify-left">
         <a href="${ema:homeUrl}" title="Go Home">
@@ -56,10 +55,8 @@
         </a>
       </div>
     </div>
-
     <ema:route-tree>
       <apply template="sidebar-tree" />
     </ema:route-tree>
-
   </div>
 </nav>
