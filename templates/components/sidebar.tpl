@@ -47,6 +47,9 @@
             </with>
           </ema:metadata>
         </a>
+        <a class="font-bold truncate" title="Go Home." href="${ema:homeUrl}">
+          Home
+        </a>
       </div>
     </div>
 
