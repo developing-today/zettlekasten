@@ -57,7 +57,7 @@
         <icon />
         <else />
         <has-children>
-          <a href="${node:url}" title="View folgezettel children">
+          <a href="${node:url}" title="View Children">
             <icon />
           </a>
           <else />
@@ -72,7 +72,7 @@
       <else />
       <node:terminal>
         <else />
-        <span class="text-gray-300" title="${tree:childrenCount} children inside">
+        <span class="text-gray-300" title="${tree:childrenCount} Children">
           <tree:childrenCount />
         </span>
       </node:terminal>

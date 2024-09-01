@@ -10,6 +10,14 @@
           </path>
         </svg>
       </a>
+      <a href="https://github.com/developing-today/zettel/new/main/${ema:note:source-path}" title="New page somewhere on GitHub">
+        <svg style="width: 1rem;" class="hover:text-${theme}-700" fill="none" stroke="currentColor"
+          viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M12 4.5v15m7.5-7.5h-15">
+          </path>
+        </svg>
+      </a>
       <a href="${ema:indexUrl}" title="Expand full tree">
         <svg style="width: 1rem;" class="hover:text-${theme}-700" fill="none" stroke="currentColor"
           viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -26,7 +34,7 @@
 
     <div id="site-logo" class="pl-2">
       <div class="flex items-center my-2 space-x-2 justify-left">
-        <a href="${ema:homeUrl}" title="Go to Home">
+        <a href="${ema:homeUrl}" title="Go Home">
           <ema:metadata>
             <with var="template">
               <!-- The style width attribute here is to prevent huge
@@ -38,9 +46,6 @@
                 src="${value:iconUrl}" />
             </with>
           </ema:metadata>
-        </a>
-        <a class="font-bold truncate" title="Go Home." href="${ema:homeUrl}">
-          Home
         </a>
       </div>
     </div>
