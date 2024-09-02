@@ -1,0 +1,25 @@
+name: CI
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+    inputs:
+      upload-artifact:
+        description: 'Whether to upload the artifact'
+        default: false
+        type: boolean
+  schedule:
+    - cron: '0 0,8,16 * * *' # runs daily at 0,8,16 UTC
+permissions:
+  contents: read
+jobs:
+  ci:
+    environment: ci
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@main
+      - uses: DeterminateSystems/nix-installer-action@main
+      - uses: DeterminateSystems/magic-nix-cache-action@main
+      - run: nix build -o ./_site
+      - if: inputs.upload-artifact
+        uses: actions/upload-pages-artifact@main
