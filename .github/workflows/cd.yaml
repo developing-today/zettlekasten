@@ -10,7 +10,7 @@ permissions:
   pages: write
   id-token: write
 env:
-  GITHUB_PAGES_DEPLOY: github.ref == 'refs/heads/main' && (github.event_name == 'push' || github.event_name == 'schedule'  || github.event_name == 'workflow_dispatch')
+  GITHUB_PAGES_DEPLOY: ${{ github.ref == 'refs/heads/main' && (github.event_name == 'push' || github.event_name == 'schedule'  || github.event_name == 'workflow_dispatch') }}
 jobs:
   initial:
     runs-on: ubuntu-latest
