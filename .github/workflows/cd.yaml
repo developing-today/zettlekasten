@@ -16,6 +16,9 @@ jobs:
     runs-on: ubuntu-latest
     outputs:
      GITHUB_PAGES_DEPLOY: ${{ env.GITHUB_PAGES_DEPLOY }}
+    defaults:
+      run:
+        shell: pwsh
     steps:
       - run: |
           Write-Output @'
