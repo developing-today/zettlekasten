@@ -9,24 +9,28 @@ permissions:
   contents: read
   pages: write
   id-token: write
+env:
+  GITHUB_PAGES_DEPLOY: github.ref == 'refs/heads/main' && (github.event_name == 'push' || github.event_name == 'schedule'  || github.event_name == 'workflow_dispatch')
 jobs:
   ci:
+    environment: ci
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@main
       - uses: DeterminateSystems/nix-installer-action@main
       - uses: DeterminateSystems/magic-nix-cache-action@main
       - run: nix build -o ./_site
-      - uses: actions/upload-pages-artifact@main
+      - if: env.GITHUB_PAGES_DEPLOY
+        uses: actions/upload-pages-artifact@main
   cd:
     needs: ci
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     concurrency:
-      group: "pages"
+      group: github-pages
       cancel-in-progress: false
-    if: github.ref == 'refs/heads/main' && github.event_name == 'push'
+    if: env.GITHUB_PAGES_DEPLOY
     runs-on: ubuntu-latest
     steps:
       - id: deployment
