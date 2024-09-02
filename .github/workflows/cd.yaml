@@ -36,10 +36,10 @@ jobs:
     needs: initial
     uses: ./.github/workflows/ci.yaml
     with:
-      upload-artifact: ${{ needs.initial.outputs.GITHUB_PAGES_DEPLOY }} == 'true'
+      upload-artifact: ${{ needs.initial.outputs.GITHUB_PAGES_DEPLOY == 'true' }}
   cd:
     needs: [initial, ci]
-    if: ${{ needs.initial.outputs.GITHUB_PAGES_DEPLOY }} == 'true'
+    if: needs.initial.outputs.GITHUB_PAGES_DEPLOY == 'true'
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
