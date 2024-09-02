@@ -1,0 +1,12 @@
+- [ ] I release the following change request under the default LICENSE found at: [README.md#license](README.md#license)
+- [ ] I release the following change request under the following LICENSE configuration:
+  - [ ] The LICENSE is documented within the content.
+  - [ ] The LICENSE is documented within the content.
+  - [ ] The LICENSE is included in the the repo.
+  - [ ] The LICENSE is linked prominently in the content.
+  - [ ] The LICENSE is within the content.
+  - [ ] The LICENSE is a recognized, common license identified by a known authority.
+  - [ ] License Name:
+  - [ ] SPDX License Identifier:
+  - [ ] Explained the reason for the different license below.
+  
