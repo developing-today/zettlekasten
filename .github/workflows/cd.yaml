@@ -20,15 +20,18 @@ jobs:
       run:
         shell: pwsh
     steps:
-      - run: |
+      - name: Dump Env
+        run: |
           Write-Output @'
           ${{ toJSON(env) }}
           '@
-      - run: |
+      - name: Dump GitHub
+        run: |
           Write-Output @'
           ${{ toJSON(github) }}
           '@
-      - run: |
+      - name: Dump Inputs
+        run: |
           Write-Output @'
           ${{ toJSON(inputs) }}
           '@
