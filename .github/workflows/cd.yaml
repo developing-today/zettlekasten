@@ -1,10 +1,10 @@
-name: CI-CD
+name: CD
 on:
   push:
-  workflow_dispatch:
+    branches:
+      - main
   schedule:
     - cron: '0 1 * * *' # runs daily at 01:00 UTC
-  pull_request:
 permissions:
   contents: read
   pages: write
@@ -12,25 +12,27 @@ permissions:
 env:
   GITHUB_PAGES_DEPLOY: github.ref == 'refs/heads/main' && (github.event_name == 'push' || github.event_name == 'schedule'  || github.event_name == 'workflow_dispatch')
 jobs:
-  ci:
-    environment: ci
+  initial:
     runs-on: ubuntu-latest
+    outputs:
+     GITHUB_PAGES_DEPLOY: ${{ env.GITHUB_PAGES_DEPLOY }}
     steps:
-      - uses: actions/checkout@main
-      - uses: DeterminateSystems/nix-installer-action@main
-      - uses: DeterminateSystems/magic-nix-cache-action@main
-      - run: nix build -o ./_site
-      - if: env.GITHUB_PAGES_DEPLOY
-        uses: actions/upload-pages-artifact@main
+      - id: initial
+        run: echo "Hello"
+  ci:
+    needs: initial
+    uses: ./.github/workflows/ci.yml
+    with:
+      upload-artifact: ${{ needs.initial.outputs.GITHUB_PAGES_DEPLOY }} == "true"
   cd:
-    needs: ci
+    needs: [initial, ci]
+    if: ${{ needs.initial.outputs.GITHUB_PAGES_DEPLOY }} == "true"
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     concurrency:
       group: github-pages
       cancel-in-progress: false
-    if: env.GITHUB_PAGES_DEPLOY
     runs-on: ubuntu-latest
     steps:
       - id: deployment
