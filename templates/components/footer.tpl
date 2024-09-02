@@ -45,7 +45,12 @@
   </div>
   <div>
     <a href="https://developing.today" target="_blank" title="developing.today (Emanote ${ema:version})">
-      <img class="${iconClass}" src="${ema:emanoteStaticLayerUrl}/emanote-logo.svg" />
+      <svg style="width: 1rem;" class="hover:text-${theme}-700" fill="none" stroke="currentColor"
+          viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <g stroke-linecap="round" stroke-linejoin="round" stroke-width="2" fill="none" stroke="currentColor">
+          <use href="${ema:emanoteStaticLayerUrl}/emanote-logo.svg" />
+        </g>
+      </svg>
     </a>
   </div>
   <div>
