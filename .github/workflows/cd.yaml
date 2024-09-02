@@ -17,16 +17,26 @@ jobs:
     outputs:
      GITHUB_PAGES_DEPLOY: ${{ env.GITHUB_PAGES_DEPLOY }}
     steps:
-      - id: initial
-        run: echo "Hello"
+      - run: |
+          Write-Output @'
+          ${{ toJSON(env) }}
+          '@
+      - run: |
+          Write-Output @'
+          ${{ toJSON(github) }}
+          '@
+      - run: |
+          Write-Output @'
+          ${{ toJSON(inputs) }}
+          '@
   ci:
     needs: initial
     uses: ./.github/workflows/ci.yaml
     with:
-      upload-artifact: ${{ needs.initial.outputs.GITHUB_PAGES_DEPLOY }}
+      upload-artifact: ${{ needs.initial.outputs.GITHUB_PAGES_DEPLOY }} == 'true'
   cd:
     needs: [initial, ci]
-    if: ${{ needs.initial.outputs.GITHUB_PAGES_DEPLOY }} == "true"
+    if: ${{ needs.initial.outputs.GITHUB_PAGES_DEPLOY }} == 'true'
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
