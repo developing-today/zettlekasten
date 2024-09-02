@@ -5,8 +5,10 @@ on:
   workflow_dispatch:
     inputs:
       upload-artifact:
-        description: 'Whether to upload the artifact'
-        default: false
+        type: boolean
+  workflow_call:
+    inputs:
+      upload-artifact:
         type: boolean
   schedule:
     - cron: '0 0,8,16 * * *' # runs daily at 0,8,16 UTC
