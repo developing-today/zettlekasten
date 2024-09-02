@@ -3,9 +3,6 @@ on:
   push:
   pull_request:
   workflow_dispatch:
-    inputs:
-      upload-artifact:
-        type: boolean
   workflow_call:
     inputs:
       upload-artifact:
