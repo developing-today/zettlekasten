@@ -2,4 +2,4 @@
 slug: github-pages
 ---
 
-lol
+# Pages
