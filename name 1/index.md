@@ -2,4 +2,4 @@
 slug: dir 1
 ---
 
-# dir 1
+# name 1
