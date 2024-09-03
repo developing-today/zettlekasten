@@ -1,5 +1,4 @@
 # README
-
 You have quite a treasure there in that Horadric Cube.
 
 # LICENSE
