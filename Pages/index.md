@@ -1,5 +1,1 @@
----
-slug: github-pages
----
-
 # Pages
