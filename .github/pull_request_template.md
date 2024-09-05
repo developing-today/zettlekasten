@@ -1,7 +1,6 @@
 - [ ] I release the following change request under the default LICENSE configuration described here: [README.md#license](README.md#license)
 - [ ] I release the following change request under the following LICENSE configuration:
   - [ ] The LICENSE is documented within the content.
-  - [ ] The LICENSE is documented within the content.
   - [ ] The LICENSE is included in the the repo.
   - [ ] The LICENSE is linked prominently in the content.
   - [ ] The LICENSE is within the content.
