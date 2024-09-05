@@ -1,4 +1,4 @@
-- [ ] I release the following change request under the default LICENSE found at: [README.md#license](README.md#license)
+- [ ] I release the following change request under the default LICENSE configuration described here: [README.md#license](README.md#license)
 - [ ] I release the following change request under the following LICENSE configuration:
   - [ ] The LICENSE is documented within the content.
   - [ ] The LICENSE is documented within the content.
